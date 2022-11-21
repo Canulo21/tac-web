@@ -1,0 +1,192 @@
+@import "react-slideshow-image/dist/styles.css";
+
+/* for revslider */
+#revslider-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.react-slideshow-container .default-nav:first-of-type,
+.react-slideshow-container .default-nav:last-of-type {
+  display: none;
+}
+
+#banner-text-wrap {
+  display: table;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+#banner-text-wrap p {
+  color: #fff;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 3px 3px 6px rgb(0 0 1 / 20%) !important;
+  position: relative;
+}
+
+#banner-text-container {
+  background-color: rgba(10, 37, 64, 0.85);
+  padding: 50px 150px;
+  position: relative;
+}
+#banner-text-container::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #fff;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  top: -10px;
+}
+
+.custom-shape-divider-top-1667998484 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1667998484 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 238px;
+}
+
+.custom-shape-divider-top-1667998484 .shape-fill {
+  fill: #ffffff;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  margin: 0 0 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+h2 {
+  font-size: 34px;
+  text-shadow: 5px 0 5px rgb(0 0 0 / 15%);
+  position: relative;
+}
+
+/* for transition */
+.four-fold-container > .cols button,
+#four-fold-tittle-wrapper h3,
+#four-fold-tittle-wrapper,
+.mission-column h2::before {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+/* home */
+.mission-vission {
+  text-align: center;
+  padding: 5em 0;
+}
+.mission-vission p {
+  color: #000;
+  font-size: 22px;
+}
+.mission-vission > .mission-column:first-child {
+  margin-bottom: 40px;
+}
+.mission-column h2 {
+  padding-bottom: 10px;
+}
+.mission-column h2::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #274472;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.mission-column:hover h2::before {
+  width: 130px;
+}
+
+#four-fold-wrapper {
+  background: #1f1547;
+  padding: 5em 14em 5em;
+}
+#four-fold-wrapper h2,
+#four-fold-tittle-wrapper h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: -1px 2px 9px rgb(255 255 255 / 36%);
+}
+#four-fold-wrapper h2 {
+  margin-bottom: 70px;
+}
+#four-fold-tittle-wrapper {
+  height: 100%;
+}
+#four-fold-tittle-wrapper h3 {
+  padding-top: 80px;
+  margin-bottom: 50px;
+  display: none;
+}
+.four-fold-container {
+  display: flex;
+}
+.four-fold-container > .cols {
+  width: calc(25% - 1 * 2px) !important;
+  text-align: center;
+}
+.four-fold-container > .cols button {
+  background: transparent;
+  border: 0;
+  transform: scale(1);
+}
+.four-fold-container > .cols .savior,
+.four-fold-container > .cols .healer,
+.four-fold-container > .cols .sanctifier,
+.four-fold-container > .cols .coming.king,
+.four-fold-container > .cols button:hover {
+  transform: scale(1.2);
+  color: rgba(255, 255, 255, 1);
+  filter: drop-shadow(0 5px 15px rgba(161, 189, 95, 0.4));
+}
+
+#four-fold-tittle-wrapper p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+#four-fold-tittle-wrapper .healer,
+#four-fold-tittle-wrapper .savior,
+#four-fold-tittle-wrapper .sanctifier,
+#four-fold-tittle-wrapper .coming.king {
+  display: block;
+  opacity: 1;
+}
